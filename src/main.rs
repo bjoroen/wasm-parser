@@ -21,7 +21,7 @@ fn main() -> Result<(), std::io::Error> {
     let magic = &f[0..4];
     let version = &f[4..8];
     let type_section = &f[8..9];
-    let mut type_section_size = &f[9..10];
+    let mut type_section_size = &f[10..11];
 
     let courser = 8;
     for byte in courser..f.len() {
